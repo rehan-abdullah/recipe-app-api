@@ -86,4 +86,3 @@ class ModelTests(TestCase):
 
         exp_path = f'upload/recipe/{uuid}.jpg'
         self.assertEqual(file_path, exp_path)
-
