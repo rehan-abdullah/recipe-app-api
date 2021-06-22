@@ -29,5 +29,5 @@ RUN adduser -D user
 # -R flag, recursively adds sub-dirs to ownership
 RUN chown -R user:user /vol/
 # Gives user full access to web dir. Other users can read and execute from the dir
-RUN chown -R 755 /vol/web
+RUN chmod -R 755 /vol/web
 USER user
